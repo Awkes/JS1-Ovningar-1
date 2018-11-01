@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klocka</title>
+</head>
+<body>
+    <h1>Klocka</h1>
+    <p id="klocka"></p>
+    <script>
+        let klocka = document.getElementById('klocka');
+        klocka.innerHTML = new Date().toTimeString().substr(0,8);
+        setInterval(function() {
+            klocka.innerHTML = new Date().toTimeString().substr(0,8)
+        },1000);
+    </script>
+</body>
+</html>

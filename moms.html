@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moms</title>
+</head>
+<body>
+    <script>
+        let kostnad = Number(prompt('Vad kostar varan? (exkl. moms)'));
+        let momssats = Number(prompt('Vad är momssatsen? (Ex: 25)')) / 100;
+        alert('Kostnad exkl. moms: '+kostnad+'\nMoms: '+(momssats*kostnad)+'\nKostnad inkl. moms: '+(kostnad+(momssats*kostnad)));
+    </script>
+</body>
+</html>
